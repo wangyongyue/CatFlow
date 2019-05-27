@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		188128D62239F13F00D22C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188128D52239F13F00D22C11 /* AppDelegate.swift */; };
+		188128D82239F13F00D22C11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188128D72239F13F00D22C11 /* ViewController.swift */; };
+		188128DB2239F13F00D22C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188128D92239F13F00D22C11 /* Main.storyboard */; };
+		188128DD2239F14600D22C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188128DC2239F14600D22C11 /* Assets.xcassets */; };
+		188128E02239F14600D22C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188128DE2239F14600D22C11 /* LaunchScreen.storyboard */; };
+		188128EB2239F14700D22C11 /* CatFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188128EA2239F14700D22C11 /* CatFlowTests.swift */; };
+		188128F62239F14700D22C11 /* CatFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188128F52239F14700D22C11 /* CatFlowUITests.swift */; };
+		188129062239F17100D22C11 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188129052239F17100D22C11 /* MainVC.swift */; };
+		188129082239F1AD00D22C11 /* MainDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188129072239F1AD00D22C11 /* MainDetailsVC.swift */; };
+		1881291C2239F8E000D22C11 /* Observe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881291B2239F8E000D22C11 /* Observe.swift */; };
+		188129202239FB5D00D22C11 /* CTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881291F2239FB5D00D22C11 /* CTable.swift */; };
+		188129222239FB6C00D22C11 /* CCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188129212239FB6C00D22C11 /* CCollection.swift */; };
+		188129242239FB7800D22C11 /* CLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188129232239FB7800D22C11 /* CLabel.swift */; };
+		188129262239FB8700D22C11 /* CButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188129252239FB8700D22C11 /* CButton.swift */; };
+		188129282239FBAA00D22C11 /* CImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188129272239FBAA00D22C11 /* CImageView.swift */; };
+		1881292A2239FBBE00D22C11 /* CField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188129292239FBBE00D22C11 /* CField.swift */; };
+		1881292C2239FBE800D22C11 /* CText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881292B2239FBE800D22C11 /* CText.swift */; };
+		1881292E2239FC0300D22C11 /* CWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881292D2239FC0300D22C11 /* CWindow.swift */; };
+		188129312239FC2400D22C11 /* CView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188129302239FC2400D22C11 /* CView.swift */; };
+		18812943223A23B400D22C11 /* TableTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18812942223A23B400D22C11 /* TableTemplate.swift */; };
+		18812945223A23E000D22C11 /* CollectionTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18812944223A23E000D22C11 /* CollectionTemplate.swift */; };
+		18812948223A244D00D22C11 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18812947223A244D00D22C11 /* Cat.swift */; };
+		1881294A223A285400D22C11 /* CFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18812949223A285400D22C11 /* CFlowLayout.swift */; };
+		1881294C223A349600D22C11 /* MainTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881294B223A349600D22C11 /* MainTemplate.swift */; };
+		1881294E223A3DDC00D22C11 /* MainDetailsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881294D223A3DDC00D22C11 /* MainDetailsTemplate.swift */; };
+		18812951223A3E6A00D22C11 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18812950223A3E6A00D22C11 /* Router.swift */; };
+		18812953223A3EAC00D22C11 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18812952223A3EAC00D22C11 /* CViewController.swift */; };
+		18BAF43A2251B28C00A74F77 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BAF4362251B28C00A74F77 /* Style.swift */; };
+		18BC3325226EB83F00E79547 /* Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC3324226EB83F00E79547 /* Holder.swift */; };
+		45CC85B0229A494C00D85073 /* CGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC85AF229A494C00D85073 /* CGesture.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		188128E72239F14700D22C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188128CA2239F13F00D22C11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 188128D12239F13F00D22C11;
+			remoteInfo = CatFlow;
+		};
+		188128F22239F14700D22C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188128CA2239F13F00D22C11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 188128D12239F13F00D22C11;
+			remoteInfo = CatFlow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		188128D22239F13F00D22C11 /* CatFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		188128D52239F13F00D22C11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		188128D72239F13F00D22C11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		188128DA2239F13F00D22C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		188128DC2239F14600D22C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		188128DF2239F14600D22C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		188128E12239F14600D22C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188128E62239F14700D22C11 /* CatFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		188128EA2239F14700D22C11 /* CatFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFlowTests.swift; sourceTree = "<group>"; };
+		188128EC2239F14700D22C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188128F12239F14700D22C11 /* CatFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		188128F52239F14700D22C11 /* CatFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFlowUITests.swift; sourceTree = "<group>"; };
+		188128F72239F14700D22C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188129052239F17100D22C11 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		188129072239F1AD00D22C11 /* MainDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsVC.swift; sourceTree = "<group>"; };
+		1881291B2239F8E000D22C11 /* Observe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observe.swift; sourceTree = "<group>"; };
+		1881291F2239FB5D00D22C11 /* CTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTable.swift; sourceTree = "<group>"; };
+		188129212239FB6C00D22C11 /* CCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCollection.swift; sourceTree = "<group>"; };
+		188129232239FB7800D22C11 /* CLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLabel.swift; sourceTree = "<group>"; };
+		188129252239FB8700D22C11 /* CButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CButton.swift; sourceTree = "<group>"; };
+		188129272239FBAA00D22C11 /* CImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CImageView.swift; sourceTree = "<group>"; };
+		188129292239FBBE00D22C11 /* CField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CField.swift; sourceTree = "<group>"; };
+		1881292B2239FBE800D22C11 /* CText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CText.swift; sourceTree = "<group>"; };
+		1881292D2239FC0300D22C11 /* CWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWindow.swift; sourceTree = "<group>"; };
+		188129302239FC2400D22C11 /* CView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CView.swift; sourceTree = "<group>"; };
+		18812942223A23B400D22C11 /* TableTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTemplate.swift; sourceTree = "<group>"; };
+		18812944223A23E000D22C11 /* CollectionTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTemplate.swift; sourceTree = "<group>"; };
+		18812947223A244D00D22C11 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		18812949223A285400D22C11 /* CFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFlowLayout.swift; sourceTree = "<group>"; };
+		1881294B223A349600D22C11 /* MainTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTemplate.swift; sourceTree = "<group>"; };
+		1881294D223A3DDC00D22C11 /* MainDetailsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsTemplate.swift; sourceTree = "<group>"; };
+		18812950223A3E6A00D22C11 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		18812952223A3EAC00D22C11 /* CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
+		18BAF4362251B28C00A74F77 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		18BC3324226EB83F00E79547 /* Holder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holder.swift; sourceTree = "<group>"; };
+		45CC85AF229A494C00D85073 /* CGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGesture.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		188128CF2239F13F00D22C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188128E32239F14700D22C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188128EE2239F14700D22C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		188128C92239F13F00D22C11 = {
+			isa = PBXGroup;
+			children = (
+				188128D42239F13F00D22C11 /* CatFlow */,
+				188128E92239F14700D22C11 /* CatFlowTests */,
+				188128F42239F14700D22C11 /* CatFlowUITests */,
+				188128D32239F13F00D22C11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		188128D32239F13F00D22C11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				188128D22239F13F00D22C11 /* CatFlow.app */,
+				188128E62239F14700D22C11 /* CatFlowTests.xctest */,
+				188128F12239F14700D22C11 /* CatFlowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		188128D42239F13F00D22C11 /* CatFlow */ = {
+			isa = PBXGroup;
+			children = (
+				188128D52239F13F00D22C11 /* AppDelegate.swift */,
+				188128D72239F13F00D22C11 /* ViewController.swift */,
+				188129042239F16000D22C11 /* main */,
+				188129032239F14F00D22C11 /* Cat */,
+				188128D92239F13F00D22C11 /* Main.storyboard */,
+				188128DC2239F14600D22C11 /* Assets.xcassets */,
+				188128DE2239F14600D22C11 /* LaunchScreen.storyboard */,
+				188128E12239F14600D22C11 /* Info.plist */,
+			);
+			path = CatFlow;
+			sourceTree = "<group>";
+		};
+		188128E92239F14700D22C11 /* CatFlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				188128EA2239F14700D22C11 /* CatFlowTests.swift */,
+				188128EC2239F14700D22C11 /* Info.plist */,
+			);
+			path = CatFlowTests;
+			sourceTree = "<group>";
+		};
+		188128F42239F14700D22C11 /* CatFlowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				188128F52239F14700D22C11 /* CatFlowUITests.swift */,
+				188128F72239F14700D22C11 /* Info.plist */,
+			);
+			path = CatFlowUITests;
+			sourceTree = "<group>";
+		};
+		188129032239F14F00D22C11 /* Cat */ = {
+			isa = PBXGroup;
+			children = (
+				18812947223A244D00D22C11 /* Cat.swift */,
+				45CC85AE229A491700D85073 /* CGesture */,
+				18BAF4342251B28C00A74F77 /* Style */,
+				1881294F223A3E6A00D22C11 /* router */,
+				1881291A2239F8C100D22C11 /* Observe */,
+				188129152239F64D00D22C11 /* Containers */,
+				188129122239F59900D22C11 /* Templates */,
+				188129142239F63100D22C11 /* Components */,
+			);
+			path = Cat;
+			sourceTree = "<group>";
+		};
+		188129042239F16000D22C11 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				188129052239F17100D22C11 /* MainVC.swift */,
+				1881294B223A349600D22C11 /* MainTemplate.swift */,
+				188129162239F68000D22C11 /* Details */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		188129092239F4E800D22C11 /* CTable */ = {
+			isa = PBXGroup;
+			children = (
+				1881291F2239FB5D00D22C11 /* CTable.swift */,
+			);
+			path = CTable;
+			sourceTree = "<group>";
+		};
+		1881290A2239F4EB00D22C11 /* CWindow */ = {
+			isa = PBXGroup;
+			children = (
+				1881292D2239FC0300D22C11 /* CWindow.swift */,
+			);
+			path = CWindow;
+			sourceTree = "<group>";
+		};
+		1881290B2239F4ED00D22C11 /* CText */ = {
+			isa = PBXGroup;
+			children = (
+				1881292B2239FBE800D22C11 /* CText.swift */,
+			);
+			path = CText;
+			sourceTree = "<group>";
+		};
+		1881290C2239F4F000D22C11 /* CField */ = {
+			isa = PBXGroup;
+			children = (
+				188129292239FBBE00D22C11 /* CField.swift */,
+			);
+			path = CField;
+			sourceTree = "<group>";
+		};
+		1881290D2239F4F300D22C11 /* CImage */ = {
+			isa = PBXGroup;
+			children = (
+				188129272239FBAA00D22C11 /* CImageView.swift */,
+			);
+			path = CImage;
+			sourceTree = "<group>";
+		};
+		1881290E2239F4F500D22C11 /* CButton */ = {
+			isa = PBXGroup;
+			children = (
+				188129252239FB8700D22C11 /* CButton.swift */,
+			);
+			path = CButton;
+			sourceTree = "<group>";
+		};
+		1881290F2239F4F700D22C11 /* CLabel */ = {
+			isa = PBXGroup;
+			children = (
+				188129232239FB7800D22C11 /* CLabel.swift */,
+			);
+			path = CLabel;
+			sourceTree = "<group>";
+		};
+		188129122239F59900D22C11 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				18BC3323226EB82500E79547 /* Holder */,
+				188129192239F77D00D22C11 /* TableTemplate */,
+				188129182239F77B00D22C11 /* CollectionTemplate */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		188129132239F59C00D22C11 /* CCollection */ = {
+			isa = PBXGroup;
+			children = (
+				188129212239FB6C00D22C11 /* CCollection.swift */,
+				18812949223A285400D22C11 /* CFlowLayout.swift */,
+			);
+			path = CCollection;
+			sourceTree = "<group>";
+		};
+		188129142239F63100D22C11 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				18812954223A3F2200D22C11 /* CViewController */,
+				1881292F2239FC0D00D22C11 /* CView */,
+				1881290F2239F4F700D22C11 /* CLabel */,
+				1881290E2239F4F500D22C11 /* CButton */,
+				1881290D2239F4F300D22C11 /* CImage */,
+				1881290C2239F4F000D22C11 /* CField */,
+				1881290B2239F4ED00D22C11 /* CText */,
+				1881290A2239F4EB00D22C11 /* CWindow */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		188129152239F64D00D22C11 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				188129092239F4E800D22C11 /* CTable */,
+				188129132239F59C00D22C11 /* CCollection */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		188129162239F68000D22C11 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				188129072239F1AD00D22C11 /* MainDetailsVC.swift */,
+				1881294D223A3DDC00D22C11 /* MainDetailsTemplate.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		188129182239F77B00D22C11 /* CollectionTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				18812944223A23E000D22C11 /* CollectionTemplate.swift */,
+			);
+			path = CollectionTemplate;
+			sourceTree = "<group>";
+		};
+		188129192239F77D00D22C11 /* TableTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				18812942223A23B400D22C11 /* TableTemplate.swift */,
+			);
+			path = TableTemplate;
+			sourceTree = "<group>";
+		};
+		1881291A2239F8C100D22C11 /* Observe */ = {
+			isa = PBXGroup;
+			children = (
+				1881291B2239F8E000D22C11 /* Observe.swift */,
+			);
+			path = Observe;
+			sourceTree = "<group>";
+		};
+		1881292F2239FC0D00D22C11 /* CView */ = {
+			isa = PBXGroup;
+			children = (
+				188129302239FC2400D22C11 /* CView.swift */,
+			);
+			path = CView;
+			sourceTree = "<group>";
+		};
+		1881294F223A3E6A00D22C11 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				18812950223A3E6A00D22C11 /* Router.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		18812954223A3F2200D22C11 /* CViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18812952223A3EAC00D22C11 /* CViewController.swift */,
+			);
+			path = CViewController;
+			sourceTree = "<group>";
+		};
+		18BAF4342251B28C00A74F77 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				18BAF4362251B28C00A74F77 /* Style.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		18BC3323226EB82500E79547 /* Holder */ = {
+			isa = PBXGroup;
+			children = (
+				18BC3324226EB83F00E79547 /* Holder.swift */,
+			);
+			path = Holder;
+			sourceTree = "<group>";
+		};
+		45CC85AE229A491700D85073 /* CGesture */ = {
+			isa = PBXGroup;
+			children = (
+				45CC85AF229A494C00D85073 /* CGesture.swift */,
+			);
+			path = CGesture;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		188128D12239F13F00D22C11 /* CatFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188128FA2239F14700D22C11 /* Build configuration list for PBXNativeTarget "CatFlow" */;
+			buildPhases = (
+				188128CE2239F13F00D22C11 /* Sources */,
+				188128CF2239F13F00D22C11 /* Frameworks */,
+				188128D02239F13F00D22C11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatFlow;
+			productName = CatFlow;
+			productReference = 188128D22239F13F00D22C11 /* CatFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		188128E52239F14700D22C11 /* CatFlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188128FD2239F14700D22C11 /* Build configuration list for PBXNativeTarget "CatFlowTests" */;
+			buildPhases = (
+				188128E22239F14700D22C11 /* Sources */,
+				188128E32239F14700D22C11 /* Frameworks */,
+				188128E42239F14700D22C11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188128E82239F14700D22C11 /* PBXTargetDependency */,
+			);
+			name = CatFlowTests;
+			productName = CatFlowTests;
+			productReference = 188128E62239F14700D22C11 /* CatFlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		188128F02239F14700D22C11 /* CatFlowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188129002239F14700D22C11 /* Build configuration list for PBXNativeTarget "CatFlowUITests" */;
+			buildPhases = (
+				188128ED2239F14700D22C11 /* Sources */,
+				188128EE2239F14700D22C11 /* Frameworks */,
+				188128EF2239F14700D22C11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188128F32239F14700D22C11 /* PBXTargetDependency */,
+			);
+			name = CatFlowUITests;
+			productName = CatFlowUITests;
+			productReference = 188128F12239F14700D22C11 /* CatFlowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		188128CA2239F13F00D22C11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = wyy;
+				TargetAttributes = {
+					188128D12239F13F00D22C11 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					188128E52239F14700D22C11 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 188128D12239F13F00D22C11;
+					};
+					188128F02239F14700D22C11 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 188128D12239F13F00D22C11;
+					};
+				};
+			};
+			buildConfigurationList = 188128CD2239F13F00D22C11 /* Build configuration list for PBXProject "CatFlow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 188128C92239F13F00D22C11;
+			productRefGroup = 188128D32239F13F00D22C11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				188128D12239F13F00D22C11 /* CatFlow */,
+				188128E52239F14700D22C11 /* CatFlowTests */,
+				188128F02239F14700D22C11 /* CatFlowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		188128D02239F13F00D22C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188128E02239F14600D22C11 /* LaunchScreen.storyboard in Resources */,
+				188128DD2239F14600D22C11 /* Assets.xcassets in Resources */,
+				188128DB2239F13F00D22C11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188128E42239F14700D22C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188128EF2239F14700D22C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		188128CE2239F13F00D22C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1881294C223A349600D22C11 /* MainTemplate.swift in Sources */,
+				188129222239FB6C00D22C11 /* CCollection.swift in Sources */,
+				1881291C2239F8E000D22C11 /* Observe.swift in Sources */,
+				1881294E223A3DDC00D22C11 /* MainDetailsTemplate.swift in Sources */,
+				1881292C2239FBE800D22C11 /* CText.swift in Sources */,
+				188129242239FB7800D22C11 /* CLabel.swift in Sources */,
+				18BC3325226EB83F00E79547 /* Holder.swift in Sources */,
+				18BAF43A2251B28C00A74F77 /* Style.swift in Sources */,
+				188129312239FC2400D22C11 /* CView.swift in Sources */,
+				188128D82239F13F00D22C11 /* ViewController.swift in Sources */,
+				1881292A2239FBBE00D22C11 /* CField.swift in Sources */,
+				188129062239F17100D22C11 /* MainVC.swift in Sources */,
+				18812951223A3E6A00D22C11 /* Router.swift in Sources */,
+				18812943223A23B400D22C11 /* TableTemplate.swift in Sources */,
+				188129282239FBAA00D22C11 /* CImageView.swift in Sources */,
+				188129082239F1AD00D22C11 /* MainDetailsVC.swift in Sources */,
+				18812945223A23E000D22C11 /* CollectionTemplate.swift in Sources */,
+				188129202239FB5D00D22C11 /* CTable.swift in Sources */,
+				1881294A223A285400D22C11 /* CFlowLayout.swift in Sources */,
+				188128D62239F13F00D22C11 /* AppDelegate.swift in Sources */,
+				18812953223A3EAC00D22C11 /* CViewController.swift in Sources */,
+				188129262239FB8700D22C11 /* CButton.swift in Sources */,
+				45CC85B0229A494C00D85073 /* CGesture.swift in Sources */,
+				18812948223A244D00D22C11 /* Cat.swift in Sources */,
+				1881292E2239FC0300D22C11 /* CWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188128E22239F14700D22C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188128EB2239F14700D22C11 /* CatFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188128ED2239F14700D22C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188128F62239F14700D22C11 /* CatFlowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		188128E82239F14700D22C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 188128D12239F13F00D22C11 /* CatFlow */;
+			targetProxy = 188128E72239F14700D22C11 /* PBXContainerItemProxy */;
+		};
+		188128F32239F14700D22C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 188128D12239F13F00D22C11 /* CatFlow */;
+			targetProxy = 188128F22239F14700D22C11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		188128D92239F13F00D22C11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188128DA2239F13F00D22C11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		188128DE2239F14600D22C11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188128DF2239F14600D22C11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		188128F82239F14700D22C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		188128F92239F14700D22C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		188128FB2239F14700D22C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN467W38GQ;
+				INFOPLIST_FILE = CatFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyy.scenario.CatFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		188128FC2239F14700D22C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN467W38GQ;
+				INFOPLIST_FILE = CatFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyy.scenario.CatFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		188128FE2239F14700D22C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN467W38GQ;
+				INFOPLIST_FILE = CatFlowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyy.scenario.CatFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatFlow.app/CatFlow";
+			};
+			name = Debug;
+		};
+		188128FF2239F14700D22C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN467W38GQ;
+				INFOPLIST_FILE = CatFlowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyy.scenario.CatFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatFlow.app/CatFlow";
+			};
+			name = Release;
+		};
+		188129012239F14700D22C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN467W38GQ;
+				INFOPLIST_FILE = CatFlowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyy.scenario.CatFlowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatFlow;
+			};
+			name = Debug;
+		};
+		188129022239F14700D22C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN467W38GQ;
+				INFOPLIST_FILE = CatFlowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyy.scenario.CatFlowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatFlow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		188128CD2239F13F00D22C11 /* Build configuration list for PBXProject "CatFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188128F82239F14700D22C11 /* Debug */,
+				188128F92239F14700D22C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188128FA2239F14700D22C11 /* Build configuration list for PBXNativeTarget "CatFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188128FB2239F14700D22C11 /* Debug */,
+				188128FC2239F14700D22C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188128FD2239F14700D22C11 /* Build configuration list for PBXNativeTarget "CatFlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188128FE2239F14700D22C11 /* Debug */,
+				188128FF2239F14700D22C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188129002239F14700D22C11 /* Build configuration list for PBXNativeTarget "CatFlowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188129012239F14700D22C11 /* Debug */,
+				188129022239F14700D22C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 188128CA2239F13F00D22C11 /* Project object */;
+}

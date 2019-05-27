@@ -11,7 +11,6 @@ import UIKit
 class MainDetailsTemplate: TableTemplate {
 
     
-    var holder = MainDetailsHolder()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -30,10 +29,11 @@ class MainDetailsTemplate: TableTemplate {
         self.contentView.addSubview(field)
         field.frame = CGRect.init(x: Screen.width()/2, y: 0, width: Screen.width()/2 - 20, height: 30)
 
-        field.v_input(ob: holder.obModel)
-        label.v_text(ob: holder.obModel)
+        let h = MainDetailsHolder()
+        field.v_input(ob: h.obModel)
+        label.v_text(ob: h.obModel)
 
-        
+        holder = h
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -43,7 +43,7 @@ class MainDetailsTemplate: TableTemplate {
     }
     override func setModel(_ amodel: Cat) {
         super.setModel(amodel)
-        holder.setModel(amodel)
+        holder?.setModel(amodel)
     }
     
 }

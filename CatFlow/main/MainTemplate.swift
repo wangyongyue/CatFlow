@@ -10,8 +10,7 @@ import UIKit
 
 class MainTemplate: TableTemplate {
 
-
-    var holder = MainHolder()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -27,14 +26,18 @@ class MainTemplate: TableTemplate {
         self.contentView.addSubview(button)
         button.frame = CGRect.init(x: Screen.width()/2, y: 0, width: Screen.width()/2 - 20, height: 30)
 
-        label.v_text(ob: holder.ob)
-        button.v_on(ob: holder.clickOb)
         
-        self.v_selectOb = holder.defaultOb
+        let h = MainHolder()
+        label.v_text(ob: h.ob)
+        button.v_on(ob: h.clickOb)
         
-        let g = CGesture.init(ob: holder.tapOb)
+
+        let g = CGesture.init(ob: h.tapOb)
         self.contentView.addGestureRecognizer(g)
-                
+        
+        
+        holder = h
+
     }
    
     
@@ -45,7 +48,7 @@ class MainTemplate: TableTemplate {
     override func setModel(_ amodel: Cat) {
         super.setModel(amodel)
         
-        holder.setModel(amodel)
+        holder?.setModel(amodel)
     }
 
 
@@ -67,8 +70,6 @@ class MainHolder: Holder {
     var ob = Observe()
     var clickOb = Observe()
     var tapOb = Observe()
-
-    var defaultOb = Observe()
     
     override func setModel(_ amodel: Cat) {
         super.setModel(amodel)
@@ -84,14 +85,14 @@ class MainHolder: Holder {
             clickOb.v_on {
                 
                 a.eventIdentifier = 1
-                self.defaultOb.v_on?()
+                self.v_selectOb.v_on?()
                 
             }
            
             tapOb.v_on {
                 
                 a.eventIdentifier = 0
-                self.defaultOb.v_on?()
+                self.v_selectOb.v_on?()
             }
             
             

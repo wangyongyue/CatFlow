@@ -9,7 +9,8 @@
 import UIKit
 
 class Holder: NSObject {
-
+    
+    var v_selectOb = Observe()
     var model:Cat?
     func setModel(_ amodel:Cat){ self.model = amodel}
 

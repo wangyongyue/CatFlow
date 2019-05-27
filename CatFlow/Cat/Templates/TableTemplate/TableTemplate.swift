@@ -10,7 +10,7 @@ import UIKit
 
 class TableTemplate: UITableViewCell {
 
-    var v_SelectOb:Observe?
+    var v_selectOb:Observe?
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

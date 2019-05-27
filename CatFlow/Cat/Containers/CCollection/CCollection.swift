@@ -42,7 +42,7 @@ class CCollection: UICollectionView ,UICollectionViewDelegate,UICollectionViewDa
         if let m = model,let palm = model?.v_palm{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: palm, for: indexPath) as! CollectionTemplate
             cell.setModel(m)
-            cell.v_SelectOb?.v_on {
+            cell.v_selectOb?.v_on {
                 
                 self.block?(indexPath.row)
                 self.ob?.v_index?(indexPath.row)

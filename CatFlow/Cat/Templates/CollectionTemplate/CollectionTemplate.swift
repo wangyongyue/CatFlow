@@ -10,7 +10,7 @@ import UIKit
 
 class CollectionTemplate: UICollectionViewCell {
     
-    var v_SelectOb:Observe?
+    var v_selectOb:Observe?
 
     override init(frame: CGRect) {
         super.init(frame: frame)

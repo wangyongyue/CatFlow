@@ -30,7 +30,7 @@ class MainTemplate: TableTemplate {
         label.v_text(ob: holder.ob)
         button.v_on(ob: holder.clickOb)
         
-        self.v_SelectOb = holder.defaultOb
+        self.v_selectOb = holder.defaultOb
         
         let g = CGesture.init(ob: holder.tapOb)
         self.contentView.addGestureRecognizer(g)

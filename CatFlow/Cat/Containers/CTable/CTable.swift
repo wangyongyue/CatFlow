@@ -40,8 +40,7 @@ class CTable: UITableView ,UITableViewDataSource,UITableViewDelegate{
             let cell = self.dequeueReusableCell(withIdentifier: palm, for: indexPath) as! TableTemplate
             cell.selectionStyle = .none
             cell.setModel(m)
-           
-            cell.v_SelectOb?.v_on {
+            cell.v_selectOb?.v_on {
                 
                 self.block?(indexPath.row)
                 self.ob?.v_index?(indexPath.row)

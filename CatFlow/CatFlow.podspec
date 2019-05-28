@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CatFlow"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A short description of CatFlow."
   spec.homepage     = "https://www.jianshu.com/p/6f38975f07b6"
   spec.license      = "MIT"
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "8.0"
   spec.swift_version = '4.2'
   spec.source       = { :git => "https://github.com/wangyongyue/CatFlow.git", :tag => "#{spec.version}" }
-  spec.source_files = "Cat","Cat/**/*.swift"
+  spec.source_files = "CatFlow/Cat/**/*.swift"
   spec.requires_arc = true
   
 end

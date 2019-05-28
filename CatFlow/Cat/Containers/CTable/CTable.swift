@@ -128,6 +128,5 @@ class CTable: UITableView ,UITableViewDataSource,UITableViewDelegate{
 //
 //        self.ob?.v_index?(indexPath.row)
 //    }
-    
 
 }

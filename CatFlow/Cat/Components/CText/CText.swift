@@ -12,7 +12,7 @@ open class CText: UITextView ,UITextViewDelegate{
 
     
     //{{ msg }}
-    func v_text(ob:Observe){
+    public func v_text(ob:Observe){
         
         ob.setupObserve {
             self.text = ob.v_text
@@ -20,7 +20,7 @@ open class CText: UITextView ,UITextViewDelegate{
         
     }
     //v-bind
-    func v_bind(ob:Observe){
+    public func v_bind(ob:Observe){
         ob.setupObserve {
             
             if let dic = ob.v_blind{
@@ -31,7 +31,7 @@ open class CText: UITextView ,UITextViewDelegate{
         
     }
     //v-if
-    func v_if(ob:Observe){
+    public func v_if(ob:Observe){
         
         ob.setupObserve {
             
@@ -44,14 +44,14 @@ open class CText: UITextView ,UITextViewDelegate{
     
     //v-input
     private var ob:Observe?
-    func v_input(ob:Observe){
+    public func v_input(ob:Observe){
         
         self.ob = ob
         self.delegate = self
 
     }
     
-    func textViewDidChange(_ textView: UITextView) {
+    public func textViewDidChange(_ textView: UITextView) {
         
         self.ob?.v_text(v: { () -> String? in
             return self.text
@@ -65,9 +65,9 @@ open class CText: UITextView ,UITextViewDelegate{
     
     
     //v-change
-    typealias changeBlock = (_ text:String) ->()
-    var block:changeBlock?
-    func v_change(ob:@escaping changeBlock){
+    public typealias changeBlock = (_ text:String) ->()
+    private var block:changeBlock?
+    public func v_change(ob:@escaping changeBlock){
         
         block = ob
         self.delegate = self

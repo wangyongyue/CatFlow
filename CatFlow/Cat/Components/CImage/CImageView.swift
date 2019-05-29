@@ -11,7 +11,7 @@ import UIKit
 open class CImageView: UIImageView {
 
     //v-image
-    func v_image(ob:Observe){
+    public func v_image(ob:Observe){
         
         ob.setupObserve {
             self.image = ob.v_image
@@ -19,7 +19,7 @@ open class CImageView: UIImageView {
         
     }
     //v-bind
-    func v_bind(ob:Observe){
+    public func v_bind(ob:Observe){
         ob.setupObserve {
             
             if let dic = ob.v_blind{
@@ -29,7 +29,7 @@ open class CImageView: UIImageView {
         
     }
     //v-if
-    func v_if(ob:Observe){
+    public func v_if(ob:Observe){
         
         ob.setupObserve {
             

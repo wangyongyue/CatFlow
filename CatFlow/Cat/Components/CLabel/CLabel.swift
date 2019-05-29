@@ -11,7 +11,7 @@ import UIKit
 open class CLabel: UILabel {
 
     //{{ msg }}
-    func v_text(ob:Observe){
+    public func v_text(ob:Observe){
         
         ob.setupObserve {
             self.text = ob.v_text
@@ -19,7 +19,7 @@ open class CLabel: UILabel {
         
     }
     //v-bind
-    func v_bind(ob:Observe){
+    public func v_bind(ob:Observe){
         ob.setupObserve {
 
             if let dic = ob.v_blind{
@@ -29,7 +29,7 @@ open class CLabel: UILabel {
         
     }
     //v-if
-    func v_if(ob:Observe){
+    public func v_if(ob:Observe){
         
         ob.setupObserve {
             

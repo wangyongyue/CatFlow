@@ -12,7 +12,7 @@ open class CView: UIView {
 
     
     //v-bind
-    func v_bind(ob:Observe){
+   public func v_bind(ob:Observe){
         ob.setupObserve {
             
             if let dic = ob.v_blind{
@@ -22,7 +22,7 @@ open class CView: UIView {
         
     }
     //v-if
-    func v_if(ob:Observe){
+    public func v_if(ob:Observe){
         
         ob.setupObserve {
             

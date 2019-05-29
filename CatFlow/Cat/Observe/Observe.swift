@@ -7,9 +7,9 @@
 //
 
 import UIKit
-typealias observeBlock = () -> ()
-class Observe: NSObject {
-    var array = Array<observeBlock>()
+public typealias observeBlock = () -> ()
+public class Observe: NSObject {
+    private var array = Array<observeBlock>()
 
     
     var v_text:String?

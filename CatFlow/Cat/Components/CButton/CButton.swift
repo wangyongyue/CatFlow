@@ -11,7 +11,7 @@ import UIKit
 open class CButton: UIButton {
 
     //{{ msg }}
-    func v_text(ob:Observe){
+    public func v_text(ob:Observe){
         
         ob.setupObserve {
             self.setTitle(ob.v_text, for: .normal)
@@ -19,7 +19,7 @@ open class CButton: UIButton {
         
     }
     //v-image
-    func v_image(ob:Observe){
+    public func v_image(ob:Observe){
         
         ob.setupObserve {
             self.setImage(ob.v_image, for: .normal)
@@ -27,7 +27,7 @@ open class CButton: UIButton {
         
     }
     //v-bind
-    func v_bind(ob:Observe){
+    public func v_bind(ob:Observe){
         ob.setupObserve {
             
             if let dic = ob.v_blind{
@@ -37,7 +37,7 @@ open class CButton: UIButton {
         
     }
     //v-if
-    func v_if(ob:Observe){
+    public func v_if(ob:Observe){
         
         ob.setupObserve {
             
@@ -48,8 +48,8 @@ open class CButton: UIButton {
         
     }
     //v-on
-    var ob:Observe?
-    func v_on(ob:Observe){
+    private var ob:Observe?
+    public func v_on(ob:Observe){
         
         self.addTarget(self, action: #selector(clickEvent), for: .touchUpInside)
         self.ob = ob
@@ -62,8 +62,8 @@ open class CButton: UIButton {
     }
 
     //v-click
-    var block:observeBlock?
-    func v_click(ob:@escaping observeBlock){
+    public var block:observeBlock?
+    public func v_click(ob:@escaping observeBlock){
         
         self.addTarget(self, action: #selector(clickNewEvent), for: .touchUpInside)
         block = ob

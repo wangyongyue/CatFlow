@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CView: UIView {
+open class CView: UIView {
 
     
     //v-bind

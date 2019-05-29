@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CText: UITextView ,UITextViewDelegate{
+open class CText: UITextView ,UITextViewDelegate{
 
     
     //{{ msg }}

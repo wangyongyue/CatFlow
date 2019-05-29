@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CField: UITextField {
+open class CField: UITextField {
 
     //{{ msg }}
     func v_text(ob:Observe){

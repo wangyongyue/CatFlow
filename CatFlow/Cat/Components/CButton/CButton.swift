@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CButton: UIButton {
+open class CButton: UIButton {
 
     //{{ msg }}
     func v_text(ob:Observe){

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CImageView: UIImageView {
+open class CImageView: UIImageView {
 
     //v-image
     func v_image(ob:Observe){

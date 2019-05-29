@@ -8,11 +8,11 @@
 
 import UIKit
 typealias popCallBack = (_ obj:AnyObject?) -> ()
-class CViewController: UIViewController {
+open class CViewController: UIViewController {
     var params:[String:Any]?
     
     var call:popCallBack?
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

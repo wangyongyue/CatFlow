@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CatFlow"
-  spec.version      = "0.0.2"
+  spec.version      = "1.0.0"
   spec.summary      = "A short description of CatFlow."
   spec.homepage     = "https://www.jianshu.com/p/6f38975f07b6"
   spec.license      = "MIT"

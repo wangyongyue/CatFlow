@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CLabel: UILabel {
+public class CLabel: UILabel {
 
     //{{ msg }}
     func v_text(ob:Observe){
